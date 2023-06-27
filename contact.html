@@ -1,75 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="./main.js" async></script>
-        <title>Nolan Johnson | My Journey</title>
-    </head>
-    <body>
 
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" async></script>
+    <title>Nolan Johnson | My Journey</title>
+</head>
 
-            <div class="nav">
-                <a href="./index.html"><p>Nolan Johnson</p></a>
-
-                <nav>
-                    <ul class="nav-list" role="list">
-                        <li><a href="./index.html">Projects</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header>
-
-        <main>
-
-            <section class="contact">
-
-                    <div>
-                        <div class="title">
-                            <h1>Get In Touch</h1>
-                            <p>Have an interesting project? I'd love to hear about it!</p>
+<body>
+    <header>
+        <div class="nav">
+            <a href="./index.html">
+                <p>Nolan Johnson</p>
+            </a>
+            <nav>
+                <ul class="nav-list" role="list">
+                    <li><a href="./index.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <div>
+                <div class="title">
+                    <h1>Get In Touch</h1>
+                    <p>Have an interesting project? I'd love to hear about it!</p>
+                </div>
+                <form id="form" action="mailto:nojo.investments@gmail.com" method="post" enctype="text/plain">
+                    <div class="input-container">
+                        <div class="input-group">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="firstname" required>
                         </div>
-                        <form  id="form" action="mailto:nojo.investments@gmail.com" method="post" enctype="text/plain">
-                            <div class="input-container">
-                                <div class="input-group">
-                                    <label for="firstname">First Name:</label>
-                                    <input type="text" id="firstname" name="firstname" required>
-                                </div>
-                                <div class="input-group">
-                                    <label for="lastname">Last Name:</label>
-                                    <input type="text" id="lastname" name="lastname" required>
-                                </div>
-                                <div class="input-group">
-                                    <label for="email">Email Address:</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="input-group">
-                                    <label for="phone">Phone Number:</label>
-                                    <input type="tel" id="phone" name="phone" required>
-                                </div>
-                                <div class="input-group span-field">
-                                    <label for="reason">What Can I Help You With?</label>
-                                    <textarea id="reason" name="reason" required></textarea>
-                                </div>
-                            </div>
-                            <input class="form-button" type="submit" value="Let's Talk" id="submitForm">
-                        </form>
+                        <div class="input-group">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="input-group span-field">
+                            <label for="reason">What Can I Help You With?</label>
+                            <textarea id="reason" name="reason" required></textarea>
+                        </div>
                     </div>
+                    <input class="form-button" type="submit" value="Let's Talk" id="submitForm">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Nolan Johnson. All rights reserved.</p>
+    </footer>
+</body>
 
-            </section>            
-
-        </main>
-
-        <footer>
-
-            <p>&copy; 2023 Nolan Johnson. All rights reserved.</p>
-
-        </footer>
-
-    </body>
 </html>

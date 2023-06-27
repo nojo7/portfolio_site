@@ -5,17 +5,17 @@
 /* Custom Properties */
 
 :root {
-    --clr-primary: 	#ffffff;
-    --clr-secondary: #000000;
-    --clr-accent: #1E90FF;
+  --clr-primary: #ffffff;
+  --clr-secondary: #000000;
+  --clr-accent: #1E90FF;
 
-    --ff-primary: 'Roboto', sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
 
-    --fw-semi-bold: 500;
-    --fw-bold: 700;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
 
-    --fs-secondary: 1.75rem;
-    --fs-heading: 2.75rem;
+  --fs-secondary: 1.75rem;
+  --fs-heading: 2.75rem;
 }
 
 /* Box sizing rules */
@@ -48,9 +48,9 @@ html:focus-within {
 
 html,
 body {
-    height: 100%;
-    width: 1600px;
-    margin: 0 auto;
+  height: 100%;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 /* Set core body defaults */
@@ -75,9 +75,9 @@ svg {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -90,7 +90,12 @@ svg {
 
 /* Default Styles */
 
-h1, h2, li, p, button, form {
+h1,
+h2,
+li,
+p,
+button,
+form {
   font-family: var(--ff-primary);
 }
 
@@ -288,7 +293,8 @@ label {
   font-weight: var(--fw-semi-bold);
 }
 
-input, textarea {
+input,
+textarea {
   padding: 5px 1rem;
   border-style: solid;
   border-color: rgb(159, 157, 157);
