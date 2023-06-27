@@ -307,8 +307,9 @@ textarea {
 
 .form-button {
   width: 200px;
-  margin-top: 2rem;
-  margin-left: 6rem;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  position: absolute;
   color: var(--clr-primary);
   background-color: var(--clr-secondary);
   border-style: none;
