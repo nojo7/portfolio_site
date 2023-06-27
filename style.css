@@ -1,25 +1,21 @@
+/* Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
 /* Custom Properties */
 
 :root {
-    --clr-primary-400: ;
-    --clr-secondary-400: ;
-    --clr-neutral-400: ;
-    --clr-accent-400: ;
+    --clr-primary: 	#ffffff;
+    --clr-secondary: #000000;
+    --clr-accent: #1E90FF;
 
-    --ff-primary: ;
-    --ff-secondary: ;
-    --ff-body: ;
-    --ff-heading: ;
+    --ff-primary: 'Roboto', sans-serif;
 
-    --fw-light: 300;
-    --fw-regular: 400;
     --fw-semi-bold: 500;
     --fw-bold: 700;
 
-    --fs-300: ;
-    --fs-400: 1rem;
-    --fs-500: ;
-    --fs-600: ;
+    --fs-secondary: 1.5rem;
+    --fs-heading: 2.75rem;
 }
 
 /* Box sizing rules */
@@ -33,7 +29,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font: inherit;
 }
 
@@ -48,22 +44,24 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core page height */
+/* Set core page height and width */
 
 html,
 body {
     height: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -92,30 +90,166 @@ svg {
 
 /* Default Styles */
 
+* {
+  font-family: var(--ff-primary);
+}
 
+h1 {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: var(--fs-secondary);
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  font-size: 1.2rem;
+}
+
+/* Header */
+
+header {
+  padding: 1.5rem 7.5%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav p {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+}
+
+.nav a:visited {
+  color: var(--clr-secondary)
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list a:hover {
+  color: var(--clr-accent)
+}
+
+.nav-list a:active {
+  color: var(--clr-accent)
+}
 
 /* Hero */
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 18rem;
+}
 
+.hero-content {
+  max-width: 50rem;
+  text-align: center;
+}
 
-/* Benefit */
+/* Projects */
 
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 0 5%;
+}
 
+.three-col-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-/* Proof */
+.grid-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.6rem;
+}
 
+.projects li {
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
 
+.projects p {
+  margin-bottom: 1.75rem;
+}
 
-/* Cta */
+.projects button {
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+  font-weight: var(--fw-semi-bold);
+  border-color: var(--clr-secondary);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10rem;
+  padding: .5rem 1.25rem;
+  cursor: pointer;
+}
 
+.projects button:visited {
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+}
 
+.projects button:hover {
+  background-color: var(--clr-secondary);
+}
 
-/* Feature */
+/* About Me */
 
+.about-me {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem 5%;
+  margin-bottom: 5rem;
+}
 
+.about-cols {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.6rem;
+}
 
-/* Testimonial */
+.col-left p {
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-height: 100%;
+  box-shadow: 0.25rem 0.25rem 2px var(--clr-secondary);
+}
+
+/* Contact */
 
 
 
 /* Footer */
+
+footer {
+  text-align: center;
+  padding: 3rem 0;
+}

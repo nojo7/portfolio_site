@@ -9,43 +9,48 @@
     </head>
     <body>
 
-        <header class="nav">
+        <header>
 
-            <a href="./index.html"><h1>Nolan Johnson</h1></a>
+            <div class="nav">
+                <a href="./index.html"><p>Nolan Johnson</p></a>
 
-            <nav>
-                <ul class="nav-links" role="list">
-                    <li><a href="./index.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul class="nav-list" role="list">
+                        <li><a href="./index.html">Projects</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
 
         </header>
 
         <main>
 
             <section class="hero">
-
-                <h2>Marketing. Sales. Technology.</h2>
-                <blockquote>"Solving for each puzzle piece is an exciting game, almost like a video game except the rewards of winning this game change lives in the real world." - Nolan Johnson</blockquote>
-
+                <div class="hero-content">
+                    <h1>Marketing. Sales. Technology.</h1>
+                    <blockquote>
+                        <p>"Solving for each piece of the puzzle is an exciting game, almost like a video game except the rewards of
+                        winning this game change lives in the real world." - Nolan Johnson</p>
+                    </blockquote>
+                </div>
             </section>
 
             <section class="projects">
 
                 <h2>Explore JavaScript Projects</h2>
-                <ul>
-                    <div>
+                <ul class="three-col-grid" role="list">
+                    <div class="grid-content">
                         <li>Luhn Algorithm Program</li>
                         <p>The goal of this project was to evaluate a series of arrays and output a list of credit card companies who have issues invalid credit card numbers.</p>
                         <a href="https://github.com/nojo7/luhn_algorithm_program.git" target="_blank"><button>View on Github</button></a>
                     </div>
-                    <div>
+                    <div class="grid-content">
                         <li>Genetic Mutation Experiment</li>
-                        <p>The goal of this project was to simulate the genetic mutation of a self mutating ocean creature, and output an array of specimen most likely to survive for further DNA analysis.</p>
+                        <p>The goal of this project was to simulate a self mutating ocean creature, and output an array of specimen most likely to survive for further DNA analysis.</p>
                         <a href="https://github.com/nojo7/mystery_organism_mutate.git" target="_blank"><button>View on Github</button></a>
                     </div>
-                    <div>
+                    <div class="grid-content">
                         <li>Randomized Motivation Generator</li>
                         <p>The goal of this project was to create a program that generates new motivational messages at random every time the program was ran.</p>
                         <a href="https://github.com/nojo7/mixed_messages.git" target="_blank"><button>View on Github</button></a>
@@ -53,27 +58,28 @@
                 </ul>
             </section>
 
-            <section class="About Me">
-
-                <div>
-                    <h2>Who is Nolan Johnson?</h2>
-                    <p>That's a big question. Here is the professional snapshot:</p>
-                    <p>I've been obessed with sales and marketing for the last 8 years. Understanding people, how they think, and how to create valuable offers to problems people are experience. It's like this grand puzzle that once solved has a satisfying value exchange.</p>
-                    <p>Over the years I've marketed and sold various offers from freelance marketing services, fitness gyms, growth consulting for Saas companies, real estate services, ecommerce, and local brick and mortar retail. Working with tech companies was by far the most exciting.</p>
-                    <p>This year I realized that I don't want to look back in 60 years and regret not pursuing what I've always really wanted to do. Work in Technology.</p>
-                    <p>To me it's the most beautiful triology of leverage, efficiency and impact when done properly. It just fits me. So rather than looking back in 60 years and thinking "I wish", I decided to add coding to my bag of skills.</p>
+            <section class="about-me">
+                <div class="about-cols col-left">
+                    <h2>Obligatory Self-Promoting Bio With A Photo That Shows Off How Happy I Am - Theme By Instagram</h2>
+                    <p>I've been obessed with sales and marketing for the last 8 years. Understanding people, how they think, and how to create valuable offers to problems that people experience. It's like this grand puzzle that once solved has a satisfying value exchange.</p>
+                    <p>That obession led to marketing and selling many offers from freelance marketing, fitness gyms, growth consulting for SaaS companies, real estate services, ecommerce, to brick and mortar retail. Truthfully all but tech were agonizing to work on.</p>
+                    <p>This year I reflected on this and realized that I don't want to look back in 60 years and regret not pursuing what I've always really wanted to be involve in. Technology.</p>
+                    <p>To me it's the most beautiful triology of leverage, efficiency and impact when done properly. It just fits me. So rather than looking back in 60 years and thinking "I wish", I decided to add coding to my bag of skills and see where it takes me.</p>
                     <p>This website documents my journey as my pivot to technology progresses.</p>
                 </div>
 
-                <div>
+                <div class="about-cols col-right">
                     <img src="./images/IMG_3054.webp" alt="Photo of Nolan Johnson">
                 </div>
-                
             </section>
 
         </main>
 
-        <footer></footer>
+        <footer>
+
+            <p>&copy; 2023 Nolan Johnson. All rights reserved.</p>
+
+        </footer>
 
     </body>
 </html>
