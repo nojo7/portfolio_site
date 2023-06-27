@@ -26,28 +26,39 @@
 
         <main>
 
-            <section class="contact-form">
+            <section class="contact">
 
-                <h1>Have an interesting project? I'd love to hear about it!</h1>
-
-                <form action="mailto:nojo.investments@gmail.com" method="post" enctype="text/plain">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname" required>
-                  
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" required>
-                  
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                  
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                  
-                    <label for="reason">Reason for Contacting:</label>
-                    <textarea id="reason" name="reason" required></textarea>
-                  
-                    <input type="submit" value="Submit">
-                  </form>                  
+                    <div>
+                        <div class="title">
+                            <h1>Get In Touch</h1>
+                            <p>Have an interesting project? I'd love to hear about it!</p>
+                        </div>
+                        <form action="mailto:nojo.investments@gmail.com" method="post" enctype="text/plain">
+                            <div class="input-container">
+                                <div class="input-group">
+                                    <label for="firstname">First Name:</label>
+                                    <input type="text" id="firstname" name="firstname" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="lastname">Last Name:</label>
+                                    <input type="text" id="lastname" name="lastname" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email Address:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="phone">Phone Number:</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="input-group span-field">
+                                    <label for="reason">What Can I Help You With?</label>
+                                    <textarea id="reason" name="reason" required></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="form-button" type="button" onclick="submitForm()">Let's Talk</button>
+                    </div>
 
             </section>            
 
