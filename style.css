@@ -346,3 +346,19 @@ footer {
   text-align: center;
   padding: 3rem 0;
 }
+
+#invert-colors {
+  background-color: transparent;
+  margin-top: 0.5rem;
+  text-decoration: underline;
+  border: none;
+}
+
+#invert-colors:visited {
+  color: var(--clr-secondary);
+}
+
+#invert-colors:hover {
+  cursor: pointer;
+  color: var(--clr-accent);
+}
